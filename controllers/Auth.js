@@ -202,4 +202,19 @@ exports.login = async (req, res) => {
 
 //changePassword
 
-
+exports.changePassword= async(req,res)=>{
+  try{
+      //get data from body
+      //get Old password, newpassword ,confirm
+      //validate 
+      //update pwd in db
+      //send email- password change
+      //retrun res
+  }
+  catch(error){
+    return res.status(500).json({
+      success:false,
+      message:"Something went wrong during changing password"
+    })
+  }
+}
